@@ -149,7 +149,7 @@ margin-left: 550px;
     
 }
 .accordion-item {
-    /* border: 3px solid rgb(20, 19, 20); */
+    border: 3px solid rgb(20, 19, 20);
     margin-bottom: 30px;
     border-radius: 8px;
     padding: 25px;
@@ -213,6 +213,7 @@ article:hover{
 .slider-wraper{
     position: relative;
 
+
 }
 .slider-content{
     margin-left: 30px;
@@ -231,7 +232,7 @@ article:hover{
 
 
 
-
+/* საკონტაქტო */
 
 
 .kontakti{
@@ -280,18 +281,18 @@ body {
 	align-items: center;
 	justify-content: center;
     
-	/* min-height: 500px; */
+	min-height: 500px;
 }
 
 
 
 .screen {		
 	background: linear-gradient(90deg, #5D54A4, #7C78B8);		
-	position: relative;	
+	position: relative;
 	height: 480px;
 	width: 300px;	
 	box-shadow: 0px 0px 24px #5C5696;
-    margin-bottom: 20px;
+    
 }
 
 .screen__content {
@@ -355,16 +356,16 @@ body {
 /* ბეგრაუნდის დასასრული */
 
 .login {
-    
+
 	width: 320px;
 	padding: 30px;
-	/* padding-top: 156px; */
+	padding-top: 156px;
 }
 
-.login__field {
+/* .login__field {
 	padding: 20px 0px;	
 	position: relative;	
-}
+} */
 
 .login__icon {
 	position: absolute;
@@ -552,6 +553,10 @@ flex-direction: column;
 
 
 @media (max-width: 768px){
+
+    .kontakti{
+        display: none;
+    }
 
     .pirvelidivi{
     display:none;
