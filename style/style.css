@@ -1,0 +1,801 @@
+/* 
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600@display=swap"); */
+
+*{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+
+/* ჰედერი */
+
+header{
+    height: 100px;
+    /* background-color: rgb(141, 190, 212); */
+    padding-top: 10px;
+
+}
+.headerbg{
+    background-color: transparent;
+    top: 0;
+    left: 0;
+    width: 100%;
+
+}
+.headerbg.scroll{
+    background-color: #4a68bb;
+}
+header h1{
+    font-size: 40px;    
+    margin-left: 20px;
+    margin-top: 20px;
+    /* margin-top: 50px; */
+}
+
+header h1 a{
+    color: #080808;
+}
+
+header h1 a:hover{
+      color: #4c74c9;   
+      font-weight: bold;
+       font-size: 35px;
+
+}
+
+
+
+header nav ul a{
+    color: #0f0f0f;
+    /* margin-right: 30px; */
+    font-size: 20px; 
+    padding: 10px 20px;   
+    
+    
+}
+header nav a:hover{
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+
+
+/* პირველი სურათი  */
+
+.pirvelidivi img{
+    
+    margin-top: 10px;
+    margin-left: 30px;
+}
+
+.pirveliteksti{
+    font-size: 25px;
+    font-weight: bold;
+    margin-left: 450px;
+    margin-top: 20px;
+
+}
+.meoreteksti{
+    margin-top: 10px;
+    margin-left: 300px;
+    margin-right: 390px;
+    text-align: justify;
+}
+
+/* ფილტრი */
+
+.container-filter{
+    margin-top: 20px;
+margin-left: 550px;
+    max-width: 700px;
+    width: 100%;
+
+}
+
+.search-block input{
+    width: 30%;
+	height: 30px;
+	background: #e0dede;
+	justify-content: center;
+	display: flex;
+	
+	border: none;
+	outline: none;
+	border-radius: 5px;
+}
+.search-block h2{
+    font-size: 18px;
+
+}
+.user-name-list li.hide{
+    display: none;
+}
+
+/* აკორდიონი  */
+
+.accordion-container {
+    max-width: 320px;
+    width: 100%;
+
+    margin-left: 720px;
+    padding-bottom: 0;
+    display: flex;
+    
+}
+.accordion-title {
+    
+    position: relative;
+}
+.accordion-title::before {
+    content:  ':';
+    position:absolute;
+    top: 40px;
+    left: 99%;
+    transform: translateY(-50%);
+}
+.descr-accordion {
+    width: 100%;
+    height: 0;
+    overflow: hidden;
+    color: #FFF;
+    font-weight: bold;
+    font-size: 15px;
+    margin-top: 5px;
+    
+}
+.accordion-item {
+    /* border: 3px solid rgb(20, 19, 20); */
+    margin-bottom: 30px;
+    border-radius: 8px;
+    padding: 25px;
+    margin-left: 10px;
+}
+
+
+
+.accordion-item.activeAccordion .accordion-title::before {
+    content:  '-';
+}
+.accordion-item.activeAccordion .descr-accordion  {
+    height: 20px;
+}
+
+
+
+/* 
+ორი სურათი */
+
+.artiklebiskonteineri{
+    display: flex;
+    margin-left: 650px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    
+   
+}
+article{
+    width: 220px;
+    height: 200px;
+    border: 3px solid #313235;
+    padding-left: 15px;
+    border-radius: 10px;
+    margin-left: 20px;
+}
+
+
+
+
+article:hover{
+    cursor: pointer;
+    box-shadow: 0 0 20px;
+    transform: scale(1.05);
+}
+
+/* სლაიდერი */
+.section img{
+    width: 50%;
+    height: 50%;
+}
+.arrow{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    font-size: 35px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.slider-wraper{
+    position: relative;
+
+}
+.slider-content{
+    margin-left: 30px;
+}
+
+.arrow-left{
+    left: 40px;
+}
+.arrow-right{
+    right: 670px;
+}
+.slidertitle{
+    margin-left: 250px;
+}
+
+
+
+
+
+
+
+.kontakti{
+    width: 400px;
+    height: 300px;
+    background-color: #4C489D;
+    margin-left: 750px;
+    margin-top: 150px;
+    
+    
+}
+
+.kontakti h2{
+    padding-top: 20px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    text-align: center;
+    
+}
+
+.kontakti p {
+    font-size: 15px;
+    margin-left: 20px;
+    text-align: justify;
+    margin-right: 20px;
+}
+
+
+/* ფორმის ვალიდაცია */
+@import url('https://fonts.googleapis.com/css?family=Raleway:400,700');
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;	
+	font-family: Raleway, sans-serif;
+}
+
+body {
+	background: linear-gradient(90deg, #C7C5F4, #776BCC);		
+}
+
+.formcontainer {
+    margin-left: 600px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+    
+	/* min-height: 500px; */
+}
+
+
+
+.screen {		
+	background: linear-gradient(90deg, #5D54A4, #7C78B8);		
+	position: relative;	
+	height: 480px;
+	width: 300px;	
+	box-shadow: 0px 0px 24px #5C5696;
+    margin-bottom: 20px;
+}
+
+.screen__content {
+	z-index: 1;
+	position: relative;	
+	height: 100%;
+}
+
+/* ბეგრაუნდი */
+.screen__background {		
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	z-index: 0;
+	-webkit-clip-path: inset(0 0 0 0);
+	clip-path: inset(0 0 0 0);	
+}
+
+.screen__background__shape {
+	transform: rotate(45deg);
+	position: absolute;
+}
+
+.screen__background__shape1 {
+	height: 420px;
+	width: 520px;
+	background: #FFF;	
+	top: -50px;
+	right: 120px;	
+	border-radius: 0 72px 0 0;
+}
+
+.screen__background__shape2 {
+	height: 220px;
+	width: 220px;
+	background: #6C63AC;	
+	top: -172px;
+	right: 0;	
+	border-radius: 32px;
+}
+
+.screen__background__shape3 {
+	height: 540px;
+	width: 190px;
+	background: linear-gradient(270deg, #5D54A4, #6A679E);
+	top: -24px;
+	right: 0;	
+	border-radius: 32px;
+}
+
+.screen__background__shape4 {
+	height: 400px;
+	width: 200px;
+	background: #7E7BB9;	
+	top: 420px;
+	right: 50px;	
+	border-radius: 60px;
+}
+/* ბეგრაუნდის დასასრული */
+
+.login {
+    
+	width: 320px;
+	padding: 30px;
+	/* padding-top: 156px; */
+}
+
+.login__field {
+	padding: 20px 0px;	
+	position: relative;	
+}
+
+.login__icon {
+	position: absolute;
+	top: 30px;
+	color: #7875B5;
+}
+
+.login__input {
+	border: none;
+	border-bottom: 2px solid #D1D1D4;
+	background: none;
+	padding: 10px;
+	padding-left: 24px;
+	font-weight: 700;
+	width: 75%;
+	transition: .2s;
+}
+
+.login__input:active,
+.login__input:focus,
+.login__input:hover {
+	outline: none;
+	border-bottom-color: #6A679E;
+}
+
+.login__submit {
+	background: #fff;
+	font-size: 14px;
+	margin-top: 30px;
+	padding: 16px 20px;
+	border-radius: 26px;
+	border: 1px solid #D4D3E8;
+	text-transform: uppercase;
+	font-weight: 700;
+	display: flex;
+	align-items: center;
+	width: 100%;
+	color: #4C489D;
+	box-shadow: 0px 2px 2px #5C5696;
+	cursor: pointer;
+	transition: .2s;
+}
+
+.login__submit:active,
+.login__submit:focus,
+.login__submit:hover {
+	border-color: #6A679E;
+	outline: none;
+}
+
+.button__icon {
+	font-size: 24px;
+	margin-left: auto;
+	color: #7875B5;
+}
+
+/* ქუქი */
+.cookiewrapper{
+    position: fixed;
+    bottom: 50%;
+    right: 20px;
+    max-width: 345px;
+    width: 100%;
+    background: #FFF;
+    border-radius: 8px;
+    padding: 15px 25px 22px;
+
+}
+.cookiewrapper.hide{
+    opacity:0;
+    visibility: hidden;
+    transition: all 0.3s ease ;
+}
+.cookiewrapper header{
+    display: flex;
+    align-items: center;
+    column-gap: 15px;
+}
+.cookiewrapper header i{
+    color: #4070f4;
+    font-size: 32px;
+
+}
+.cookiewrapper header h2{
+    color:#4070f4;
+    font-weight: 500;
+    margin-top: 5px ;
+}
+.cookiewrapper.data{
+    margin-top: 16px;
+}
+.cookiewrapper.data p {
+    color: #313235;
+    font-size: 16px;
+}
+
+.data p a {
+    color:#4070f4;
+    text-decoration: none;
+}
+
+.data p a:hover{
+    text-decoration: underline;
+}
+
+.cookiewrapper .buttons{
+    margin-top: 16px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.buttons .button{
+    border: none;
+    color: #fff;
+    
+    padding: 8px 0;
+    border-radius: 4px;
+    background: #4070f4;
+    cursor: pointer;
+    width: calc(100% / 2 - 10px);
+    transition: all 0.2s ease;
+}
+
+.buttons .button:hover{
+    background-color: #034bf1;
+}
+
+/* ბურგერბარი */
+
+.headerbg {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav-ul {
+    display: flex;
+}
+.toggle-button {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: 40px;
+    height: 40px;
+    border: 2px solid rgb(10, 10, 10);
+    display: none;
+}
+.line {
+    width: 80%;
+    height: 2px;
+    background-color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition:all 0.5s;
+}
+.line1 {
+    top: 30%;
+}
+.line3 {
+    top: 70%;
+}
+.activeLine .line1 {
+    top: 50%;
+    transform: translate(-50%,-50%) rotate(45deg);
+}
+.activeLine .line3 {
+    top: 50%;
+    transform: translate(-50%,-50%) rotate(-45deg);
+}
+.activeLine .line2 {
+    display: none;
+}
+
+.nav-ul.inactive {
+    /* margin-left: 500px; */
+    /* display: flex; */
+width: 900px;
+/* text-align: right; */
+float:left;
+flex-direction: column;
+}
+
+
+@media (max-width: 768px){
+
+    .pirvelidivi{
+    display:none;
+   }
+   .pirveliteksti{
+    margin-left: 20px;
+    font-size: 25px;
+    margin-top: 60px;
+    color: #fff;
+    
+   }
+   header h1{
+    margin-top: 5px;
+   }
+
+   header nav ul a {
+    margin-top: 100px;
+    color: #f39345;
+    font-weight: bolder;
+    margin-left: 20px;
+    padding-top: 30px;
+   }
+.meoreteksti{display: none;
+
+}
+.container-filter{
+    margin-left: 20px;
+}
+.artiklebiskonteineri{
+    
+    display: none;
+    
+}
+.arrow-right{
+    left: 555px;
+}
+
+.accordion-container{
+    display: none;
+}
+
+.slider-wraper{
+    display: block;
+    width: 1200px;
+    margin-left: 15px;
+    margin-top: 30px;
+margin-bottom: 50px;
+}
+
+.formcontainer{
+    margin-top: 20px;
+
+    margin-left: 0px;
+    scroll-behavior: smooth;
+    
+}
+
+.cookiewrapper{
+    background-color: #fa9440;
+    margin-left: 10px;
+}
+
+
+    body.active{
+
+    
+        background-image: url(https://www.mecc.edu/wp-content/uploads/Medical-Laboratory-Technology.jpg);
+    
+    }
+}
+
+@media (max-width: 480px) {
+   .pirvelidivi{
+    display:none;
+   }
+   .pirveliteksti{
+    margin-left: 20px;
+    font-size: 25px;
+    margin-top: 80px;
+    color: #fff;
+    
+   }
+.meoreteksti{display: none;
+
+}
+.container-filter{
+    margin-left: 5px;
+}
+.artiklebiskonteineri{
+    margin-left: 5px;
+    display: inline;
+    
+}
+.artiklebiskonteineri article{
+    margin-top: 10px;
+    margin-left: 5px;
+}
+
+.accordion-container{
+    display: none;
+}
+
+.slider-wraper{
+    display: none;
+
+
+}
+
+.formcontainer{
+    margin-top: 20px;
+
+    margin-left: 0px;
+    scroll-behavior: smooth;
+    
+}
+
+.cookiewrapper{
+    margin-left: 10px;
+}
+
+
+
+    .navigation {
+        display: none;
+    }
+    .toggle-button {
+        display: block;
+    }
+    .headerbg {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    
+    
+    .navigation.activeNav {
+        display: block;
+        width: 100%;
+    }
+}
+
+@media (max-width: 320px){
+
+    
+header nav ul a {
+    color: #fff;
+    padding-top: 5px;
+    
+}
+header nav ul {
+    margin-top: 10px;
+    
+}
+
+    .pirvelidivi{
+        display:none;
+       }
+       .pirveliteksti{
+        margin-left: 20px;
+        font-size: 25px;
+        margin-top: 80px;
+        color: #f39345;
+        
+       }
+    .meoreteksti{display: none;
+    
+    }
+    .container-filter{
+        margin-left: 15px;
+    }
+    .artiklebiskonteineri{
+        margin-left: 20px;
+        display: inline;
+        
+    }
+    .artiklebiskonteineri article{
+        margin-top: 10px;
+        margin-left: 20px;
+    }
+    
+    .accordion-container{
+        display: none;
+    }
+    
+    .slider-wraper{
+        display: none;
+    
+    
+    }
+    
+    .formcontainer{
+        margin-top: 20px;
+    
+        margin-left: 0px;
+        scroll-behavior: smooth;
+        
+    }
+    
+    .cookiewrapper{
+        display: none;
+    }
+    
+}
+
+
+
+/* სქროლი */
+ 
+
+
+#top{
+    margin-left: 50%;
+    margin-top: 300px;
+    margin-bottom: 50px;
+font-size: 15px;
+font-weight: bold;
+font-style: italic;
+border: solid black 2px;
+padding: 5px;;
+border-radius: 5px;
+    
+    right: 50px;
+    bottom: 50px;
+}
+
+/* ფუტერი */
+
+footer{
+    margin-top: 50px;
+    background-color: #000000;
+    height: 50px;
+    text-align: center;
+}
+footer p{
+
+    color: #ffffff;
+    
+}
+
+.upleba{
+    color: #ffffff;
+margin-top: 10px;
+padding-top: 8px;
+   font-size: 20px;
+
+    
+}

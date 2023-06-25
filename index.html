@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" >
+    <title>MedicalLab</title>
+     <link rel="stylesheet" href="style/style.css">
+     <link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css">
+    
+    
+    </head>
+
+
+
+
+
+<body class="body" id="body">
+
+
+    
+
+
+    <header  >
+        <!-- ჰედერი -->
+
+        <div class="headerbg">
+        
+        <h1> <a target="_self" rel="unfollow" href="index.html"> MedicalLab </a></h1>
+        <nav id="nav" class="navigation">
+            <ul class="nav-ul" id="nav-ul">
+                <li> <a target="_blank" rel="unfollow" href=""> Home</a> </li>
+                <li> <a target="_blank" rel="unfollow" href=""> Services</a> </li>
+                <li> <a target="_blank" rel="unfollow" href=""> Contact</a> </li>
+        
+            </ul>
+        </nav>
+    <div class="toggle-button" id="toggleButton">
+        <div class="line line1"></div>
+        <div class="line line2"></div>
+        <div class="line line3"></div>
+    </div></div>
+    </header>
+    <main>
+
+        
+
+      
+
+
+    <!-- პირველისურათი  -->
+
+        <div class="pirvelidivi">
+            <img src="img/technology.jpg" alt="">
+        </div>
+
+        <p class="pirveliteksti">
+            Welcome to our Laboratory
+        </p>
+        <p class="meoreteksti">
+            It has been the ongoing goal of the our Medical Laboratory to provide comperhensive primery medical care. When you have healthcare needs, your health needs an experienced proffesionls who knows laboratory field and can effectively diagnose, friendly stuff who counsels your medical statement with doctors to find the best way to maintain and imrpove your health.
+        </p>
+<!-- ფილტრი -->
+<section>
+    <div class="container-filter">
+        <div class="search-block">
+            <h2 class="filtrish2">Search</h2>
+            <input type="search" id="Filter">
+        </div>
+        <ul id="result" class="user-name-list"></ul>
+    </div>
+</section>
+
+
+<!-- ორი სურათი -->
+
+        <div class="artiklebiskonteineri">
+            <article >
+                
+                <div>
+                    <img src="img/scsc1.png" alt="">
+                </div>
+            
+            </article>
+
+            <article>
+                
+                <div>
+                    <img src="img/scsc2.png" alt="">
+                </div>
+                
+            </article>
+            
+          
+            </div>
+
+             <!-- აკორდიონი -->
+             <div class="accordion-container">
+        
+                <div class="accordion-item">
+                    <h2  class="accordion-title">Acute diseases</h2>
+                    <p class="descr-accordion">
+                        Influenza Virus  
+                        
+                    </p>
+                    <p class="descr-accordion">Gastroenteritis </p>
+                    <p class="descr-accordion">Common Cold</p>
+                    <p class="descr-accordion">...</p>
+
+                </div>
+                <div class="accordion-item">
+                    <h2  class="accordion-title">Chronic diseases</h2>
+                    <p class="descr-accordion">Diabetes</p>
+                    <p class="descr-accordion">Functional Gastrointestinal Disorder</p>
+                    <p class="descr-accordion">Arthritis</p>
+                    <p class="descr-accordion">Asthma</p>
+                    <p class="descr-accordion">Chronic Obstructive Pulmonary Disease</p>
+                    <p class="descr-accordion">...</p>
+                    
+
+                </div>
+                
+            </div>
+
+
+<!-- 
+სლაიდერი -->
+
+<section class="section">
+    <div class="slider-wraper" id="slider-wraper">
+        <button class="arrow arrow-left" id="arrow-left"> < </button>
+        <button class="arrow arrow-right" id="arrow-right"> > </button>
+        <div class="slider-content" id="slider-content"></div>
+    </div>
+</section>
+
+
+
+    <div class="kontakti">
+        <h2>Contact us with your account</h2>
+        <p>Our Laboratory team is working with doctors 24/7 for you and your health because <b> your health is our priority</b>. We are trying to manage to answer all your questions and calls in time but in case we are out of connection or  you have any additional <b> questions or complains</b>, you can contact us with you account. For this you have to create your private account with username and password. 
+        <p> Don't share your password with anyone! </p>  <p>Write your email correct!</p>  <p> You will recieve our answer on you email. <i>Maxsimum reaction time for your message is 24 hours</i> . Thank you for your patience! Wish you health and wellness!  </p></p>
+    </div>
+
+
+<!-- ფორმის ვალიდაცია  -->
+<div class="formcontainer">
+	<div class="screen">
+		<div class="screen__content">
+			<form action="" class="login"  id="registration-form" method="post">
+
+				<div class="login__field">
+		<input type="text" class="login__input" placeholder="Username" id="username-field" name="username">
+			<p class="error-text" id="error-username"></p>	</div>
+
+            <div class="login__field">
+                <input type="email" name="email" id="emailField" class="login__input" placeholder="Email">
+              <p class="error-text" id="error-email"></p>
+    </div>
+
+				<div class="login__field">
+		<input type="password" name="password" id="password-field1" class="login__input" placeholder="Password">
+                     <i id="toggleIcon" class="fa-solid fa-eye"></i> 
+                     <p class="error-text" id="error-password"></p>
+				</div>
+  
+                <div class="login__field">
+                    <input type="password" name="password2" id="password-field2" class="login__input" placeholder="Repeat Password">
+    
+             <p class="error-text" id="error-password2"></p>
+        </div>
+        
+      
+
+<div class="login__field">
+    <p>Select your age:</p>
+    <input type="radio" name="age" id="age1" >
+    <label for="age1">18-30</label>
+    <input type="radio" name="age" id="age2">
+    <label for="age2">30-60</label>
+    <input type="radio" name="age" id="age3">
+    <label for="age3">>60</label>
+  <p class="error-text" id="error-age"></p>
+</div>
+
+<div class="login__field">
+    <input type="checkbox" name="agree" id="agree" >
+    <label for="agree"> I agree <a href="#"> Terms and conditions </a></label>
+  <p class="error-text" id="error-agree"></p>
+</div>
+
+
+
+				<button type="submit" class="button login__submit">
+					<span class="button__text">Log In Now</span>
+					<i class="button__icon fas fa-chevron-right"></i>
+				</button>				
+			</form>
+		</div>
+
+        <!-- ბეგრაუნდი  -->
+		<div class="screen__background">
+			<span class="screen__background__shape screen__background__shape4"></span>
+			<span class="screen__background__shape screen__background__shape3"></span>		
+			<span class="screen__background__shape screen__background__shape2"></span>
+			<span class="screen__background__shape screen__background__shape1"></span>
+		</div>		
+	</div>
+</div>
+
+
+
+
+
+
+
+<!-- სქროლი -->
+<section class="top">
+    <button id="top" > Scroll to top</button>
+</section>
+
+<!-- ქუქი -->
+ <div class="cookiewrapper">
+    <header>
+        <i class="bx bx-cookie"> </i>
+        <h2> Cookie Consent</h2>
+    </header>
+
+
+<div class="data">
+    <p>this website uses cookies to help you have a superior and more relevant browsing experience on the website.  <a href="#"> Read More...</a></p>
+</div>
+
+<div class="buttons">
+    <button class="button" id="acceptBtn">Accept</button>
+    <button class="button">Decline</button>
+</div>
+
+</div> 
+<!-- 
+ბურგერბარი -->
+
+
+    <!-- ფუტერი -->
+
+        <footer>
+            
+                    
+                    <p class="upleba">
+                       <span>&#169;</span> 2023
+                    </p>
+    
+        </footer>
+
+        <script src="node_modules/axios/dist/axios.min.js"></script>
+        <script type="module" src="script.js" defer></script>
+</body>
+
+</html>
